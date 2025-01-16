@@ -31,7 +31,7 @@
 
 .devices {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /* Responsive grid */
     gap: 30px; /* Space between grid items */
     margin-top: 300px;
     width: 100%; /* Ensure the grid takes the full width */
