@@ -1,0 +1,39 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100vh; /* Ensure the home component takes the full viewport height */
+}
+
+.description {
+    margin-top: 100px;
+}
+
+.description h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.description h3 {
+    font-size: 1.25rem;
+    color: gray;
+    margin: 0;
+}
+
+.description p {
+    margin: 0;
+    margin-bottom: 5px;
+    color: gray;
+}
+
+.devices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Space between grid items */
+    margin-top: 300px;
+    width: 100%; /* Ensure the grid takes the full width */
+    justify-items: center; /* Center items horizontally */
+}

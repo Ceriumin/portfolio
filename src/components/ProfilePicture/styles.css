@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+}
+
+.circle {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    max-width: 30vh;
+    max-height: 30vh;
+}
+
+.circle img {
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+}
