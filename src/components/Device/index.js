@@ -6,8 +6,9 @@ function Device({
     type,
     title,
     img,
-    isFinished = true,
+    isFinished,
     style,
+    isExpanded,
 }) {
     
     const [scale, setScale] = useState(1);

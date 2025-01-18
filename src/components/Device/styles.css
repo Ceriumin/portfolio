@@ -11,7 +11,7 @@
 
 .device img {
     width: auto;
-    height: 75%;
+    height: 70%;
     object-fit: cover;
     z-index: 1;
     position: absolute;
@@ -26,7 +26,8 @@
 }
 
 .device__title h3 {
-    font-size: 1.3rem;
+    color: gray;
+    font-size: 1.25rem;
     font-weight: 700;
     margin: 0;
 }
