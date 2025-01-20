@@ -1,26 +1,38 @@
+:root {
+    --circle-size: 175px;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10rem;
+}
+
+.outer-circle {
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: calc(var(--circle-size) + 20px);
+    height: calc(var(--circle-size) + 20px);
 }
 
 .circle {
-    width: 20vw;
-    height: 20vw;
     border-radius: 50%;
     background-color: lightgray;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-
-    max-width: 30vh;
-    max-height: 30vh;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    background: linear-gradient(to top, #d2d2d5, #dddddd);
 }
 
 .circle img {
-    width: 75%;
-    height: 75%;
+    width: 85%;
+    height: 85%;
     object-fit: contain;
 }

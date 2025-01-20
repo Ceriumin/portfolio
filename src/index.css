@@ -13,5 +13,9 @@ code {
     monospace;
 }
 
+.App {
+  margin: 0 auto;
+  max-width: 610px; /* Maximum width */
+}
 
 

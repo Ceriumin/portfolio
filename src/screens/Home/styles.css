@@ -1,0 +1,23 @@
+.home {
+    padding-bottom: 5px;
+    height: auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(200, 200, 200, 0.25);
+
+    justify-content: center;
+    display: flex;
+}
+
+.home h1 {
+    font-size: 2.25rem;
+    color: #373737;
+    font-weight: 700;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    color: #373737;
+    font-weight: 400;
+}

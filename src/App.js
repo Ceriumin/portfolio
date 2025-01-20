@@ -6,7 +6,7 @@ import './index.css';
 function App() {
   return (
     <Router>
-      <div style={{alignContent: 'center'}}>
+      <div className='App'>
         <NavigationBar />
         <Routes>
           <Route path="/about"/>

@@ -5,8 +5,10 @@ import './styles.css';
 function ProfilePicture() {
     return (
         <div className="container">
-            <div className="circle">
-                <img src={Picture} alt="Profile" />
+            <div className='outer-circle'>
+                <div className="circle">
+                    <img src={Picture} alt="Profile" />
+                </div>
             </div>
         </div>
     );
