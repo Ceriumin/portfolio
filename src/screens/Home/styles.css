@@ -37,3 +37,15 @@
     width: 100%; /* Ensure the grid takes the full width */
     justify-items: center; /* Center items horizontally */
 }
+
+.devices__phone {
+    height: 100%;
+    right: 0;
+    top: 0px;
+}
+
+.devices__laptop {
+    height: 75%;
+    right: -140px;
+    top: 100px;
+}

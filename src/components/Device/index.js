@@ -7,8 +7,7 @@ function Device({
     title,
     img,
     isFinished,
-    style,
-    isExpanded,
+    className,
 }) {
     
     const [scale, setScale] = useState(1);
@@ -39,7 +38,7 @@ function Device({
                     </div>
                 )}
             </div>
-            <img src={img} alt={type} className="device__img" style={{...style}} />
+            <img src={img} alt={type} className={className} />
         </div>
     );
 }

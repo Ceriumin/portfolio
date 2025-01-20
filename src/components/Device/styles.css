@@ -5,19 +5,16 @@
     border-radius: 15px;
     display: block; 
     text-align: left; 
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     overflow: hidden;
 }
 
 .device img {
     width: auto;
-    height: 70%;
     object-fit: cover;
     z-index: 1;
     position: absolute;
 
-    right: -120px;
-    bottom: 0;
 }
 
 .device__title {

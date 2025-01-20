@@ -1,17 +1,17 @@
 import React from 'react';
 import { StatusBar, ProfilePicture, Device } from '../../components';
-import { Underglow, Resurgence } from '../../assets/devices';
+import { Underglow, Resurgence, Planable } from '../../assets/devices';
 import './styles.css';
 
 const Home = () => {
 
     const devices = [
-        { id: 1, type: 'Video Game', title: 'Underglow', img: Underglow, isFinished: true},
-        { id: 2, type: 'Video Game', title: 'Resurgence', img: Resurgence, isFinished: true },
-        { id: 3, type: 'Application', title: 'Planable', img: undefined, isFinished: true },
-        { id: 4, type: 'Website', title: 'Dog Show', img: undefined, isFinished: true },
-        { id: 5, type: 'Application', title: 'CliniQ', img: undefined, isFinished: false },
-        { id: 6, type: 'Application', title: 'Guitarpal', img: undefined, isFinished: false },
+        { id: 5, type: 'Application', title: 'Planable', img: Planable, isFinished: true, className: 'devices__phone' },
+        { id: 4, type: 'Video Game', title: 'Underglow', img: Underglow, isFinished: true, className: 'devices__laptop' },
+        { id: 3, type: 'Video Game', title: 'Resurgence', img: Resurgence, isFinished: true, className: 'devices__laptop' },
+        { id: 2, type: 'Website', title: 'Dog Show', img: undefined, isFinished: true },
+        { id: 1, type: 'Application', title: 'CliniQ', img: undefined, isFinished: false },
+        { id: 0, type: 'Application', title: 'Guitarpal', img: undefined, isFinished: false },
     ];
 
     return (
@@ -32,6 +32,7 @@ const Home = () => {
                         title = {device.title}
                         img = {device.img}
                         isFinished = {device.isFinished}
+                        className = {device.className}
                     />
                 ))}
             </div>
