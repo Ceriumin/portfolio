@@ -1,18 +1,19 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Home, About } from './screens';
+import { Home } from './screens';
 import { NavigationBar, Footer } from './components';
 import './index.css';
 
 function App() {
   return (
     <Router>
-      <div>
+      <div style={{alignContent: 'center'}}>
         <NavigationBar />
         <Routes>
-          <Route path="/about" element={<About/>}/>
+          <Route path="/about"/>
           <Route path="/contact"/>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/" Component={Home}/>
         </Routes>
+        <Footer />
       </div>
     </Router>    
   );

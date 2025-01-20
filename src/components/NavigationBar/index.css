@@ -4,35 +4,20 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    
-    font-weight: 700;
-    font-size: 1.2rem;
-}
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(200, 200, 200, 0.25);
+    border-radius: 10px;
+    max-width: 1200px; /* Maximum width */
+    margin: 0 auto; /* Center the navbar */
 
-.navbar__label {
-    margin: 0;
-    text-decoration: none;
-    color: #000;
-    display: block;
+    /*border-width: 0.5px;
+    border-color: black;
+    border-style: solid;*/
 }
 
 .navbar__list {
     list-style-type: none;
     display: flex;
-    margin: 0;
+    margin: 20;
     padding: 0;
-}
-
-.navbar__item {
-    padding: 10px 15px;
-}
-
-.navbar__item a {
-    text-decoration: none;
-    color: #000;
-    display: block;
-}
-
-.navbar__item a:hover {
-    color: gray;
 }
