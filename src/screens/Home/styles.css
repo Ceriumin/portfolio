@@ -4,9 +4,8 @@
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(200, 200, 200, 0.25);
-
-    justify-content: center;
     display: flex;
+    flex-direction: column;
 }
 
 .home h1 {
@@ -18,6 +17,13 @@
 .description {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     color: #373737;
     font-weight: 400;
+    width: 100%;
+}
+
+.description p {
+    font-size: 1rem;
+    color: gray;
 }
