@@ -27,3 +27,45 @@
     font-size: 1rem;
     color: gray;
 }
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(10%);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.copied {
+    animation: slideIn 0.1s ease-in-out;
+    color: gray;
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(-10%);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.alt { 
+    animation: slideOut 0.1s ease-in-out;
+
+}
+
+
