@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import * as Screens from './screens';
-import { NavigationBar, Footer } from './components';
+import { NavigationBar } from './components';
 import './index.css';
 
 function App() {
@@ -9,9 +9,10 @@ function App() {
       <div className='App'>
         <NavigationBar />
         <Routes>
-          <Route path="/about" Component={Screens.About}/>
-          <Route path="/contact"/>
-          <Route path="/" Component={Screens.Home}/>
+          <Route path="/about" element={<Screens.About />}/>
+          <Route path="/projects" element={<Screens.Projects />}/>
+          <Route path="/" element={<Screens.Home />}/>
+          <Route path="/project/:id" element={<Screens.Project />}/>
         </Routes>
       </div>
     </Router>    

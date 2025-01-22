@@ -39,7 +39,7 @@
 }
 
 .navbar__button-label {
-    font-size: 13px;
+    font-size: 11px;
     color: white;
     background-color: gray;
     text-align: center;
@@ -53,8 +53,9 @@
     opacity: 0;
 }
 
+
 .button-container:hover .navbar__button-label {
-    transform: translateY(-50px); /* Move upwards */
+    transform: translateY(-60px); /* Move upwards */
     opacity: 1;
 }
 

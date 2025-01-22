@@ -5,6 +5,7 @@
 
 .footer p {
     font-size: 1rem;
+    padding: 0px 40px;
     color: gray;
 }
 
@@ -13,7 +14,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 50px;
 }
 

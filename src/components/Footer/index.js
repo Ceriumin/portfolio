@@ -33,7 +33,10 @@ function Footer({ bannerVisibility}) {
         <div className='footer'>
             {bannerVisibility && <div>
                 <h1>Let's work together.</h1>
-                <p>Developing apps and websites in React & React Native</p>
+                <p>
+                    Developing apps and websites in React & React Native,
+                    and plenty of other technologies. Let's make something great.
+                </p>
                 <div className='footer-buttons'>
                     <ResumeButton />
                     <EmailButton />

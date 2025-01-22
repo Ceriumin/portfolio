@@ -1,9 +1,9 @@
 import React from 'react';
 import './styles.css';
 
-function CustomButton({children, leftIcon, rightIcon}) {
+function CustomButton({children, leftIcon, rightIcon, onClick}) {
     return (
-        <div className="custom-button">
+        <div className="custom-button" onClick={onClick}>
             <div className="custom-icon">
                 {rightIcon}
             </div>

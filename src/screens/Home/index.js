@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { 
     ProfilePicture, 
     Header, 
@@ -25,6 +26,10 @@ function Home() {
         {id: 3, title: 'Resurgence', description: 'Video Game', image: Placeholder, onClick: () => {}},
     ]
 
+    const navigate = () => {
+        window.location.href = '/projects';
+    };
+
     return (
         <Section>
             <div className='home'>
@@ -44,17 +49,19 @@ function Home() {
                     <EmailButton />
                 </div>
                 <SubSection>
-                    <Header style={{marginBottom: '25px'}} content={<CustomButton leftIcon={<Arrow/>}>View All</CustomButton>}>
+                    <Header style={{marginBottom: '25px'}} content={<CustomButton onClick={navigate} leftIcon={<Arrow/>}>View All</CustomButton>}>
                         Pinned Projects
                     </Header> 
                     {projects.map(project => (
                         <div key={project.id} style={{marginBottom: '0.75rem'}}>
-                            <ProjectButton 
-                                title={project.title}
-                                description={project.description}
-                                image={project.image}
-                                onClick={project.onClick}
-                            />
+                            <Link to={`/project/${project.id}`}>
+                                <ProjectButton 
+                                    title={project.title}
+                                    description={project.description}
+                                    image={project.image}
+                                    onClick={project.onClick}
+                                />
+                            </Link>
                         </div>
                     ))}
                 </SubSection>

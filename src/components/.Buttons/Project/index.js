@@ -2,7 +2,7 @@ import React from 'react';
 import { Chevron } from '../../../assets/icons';
 import './styles.css';
 
-function ProjectButton({ title, description, image, onClick }) {
+function ProjectButton({ title, description, image, onClick, status }) {
 
     const Wrapper = () => {
         return (
@@ -22,7 +22,10 @@ function ProjectButton({ title, description, image, onClick }) {
                     <p>{description}</p>
                 </div>
             </div>
-            <Chevron className="chevron" />
+            <div style={{display: 'flex', alignItems: 'center'}}>
+                {status && <h3 className="project-status">coming soon</h3>}
+                <Chevron className="chevron" />
+            </div>
         </div>
     );
 }

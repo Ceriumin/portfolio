@@ -12,9 +12,9 @@ const NavigationBar = () => {
 
         return (
             <div className="button-container">
-                <p className={`navbar__button-label ${isActive ? 'active' : ''}`}>
+                <span className={`navbar__button-label ${isActive ? 'active' : ''}`}>
                     {name}
-                </p>
+                </span>
                 {clonedSource}
             </div>
         );
