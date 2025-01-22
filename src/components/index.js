@@ -11,3 +11,4 @@ export { default as ProjectButton } from './.Buttons/Project';
 export { default as ProductButton } from './.Buttons/Product';
 
 export { default as SubSection } from './SubSection';
+export { default as Section } from './Section';

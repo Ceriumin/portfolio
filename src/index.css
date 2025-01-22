@@ -20,4 +20,9 @@ code {
   max-width: 610px; /* Maximum width */
 }
 
+.App h1{
+  font-size: 2.25rem;
+  color: #373737;
+  font-weight: 700;
+}
 

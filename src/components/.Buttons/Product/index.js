@@ -21,7 +21,7 @@ function ProductButton({ title, image, onClick }) {
                 </div>
             </div>
             <div style={{display: 'flex', alignItems: 'center'}}>
-                <p className="product-status">coming soon</p>
+                <h3 className="product-status">coming soon</h3>
                 <Diagonal_Arrow className="arrow" />
             </div>
         </div>

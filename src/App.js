@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Home } from './screens';
+import * as Screens from './screens';
 import { NavigationBar, Footer } from './components';
 import './index.css';
 
@@ -9,9 +9,9 @@ function App() {
       <div className='App'>
         <NavigationBar />
         <Routes>
-          <Route path="/about"/>
+          <Route path="/about" Component={Screens.About}/>
           <Route path="/contact"/>
-          <Route path="/" Component={Home}/>
+          <Route path="/" Component={Screens.Home}/>
         </Routes>
       </div>
     </Router>    
