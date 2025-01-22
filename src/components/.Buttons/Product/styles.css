@@ -56,6 +56,8 @@
     background-color: lightgray;
     border-radius: 15px;
     margin-inline: 25px;
+    box-shadow: 0 5px 15px rgba(200, 200, 200, 0.5);
+
 }
 
 .product-content {
@@ -73,5 +75,11 @@
     padding: 5px 5px;
     font-weight: 700;
     background-color: #f0f0f0;
+}
+
+.product__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 

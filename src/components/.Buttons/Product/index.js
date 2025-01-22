@@ -7,7 +7,7 @@ function ProductButton({ title, image, onClick }) {
     const Wrapper = () => {
         return (
             <div className="product-image__container">
-                <img src={image} alt={title}/>
+                <img src={image} alt={title} className="product__image"/>
             </div>
         );
     }

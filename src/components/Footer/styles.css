@@ -3,6 +3,11 @@
     width: 100%;
 }
 
+.footer p {
+    font-size: 1rem;
+    color: gray;
+}
+
 .footer-buttons {
     display: flex;
     flex-direction: row;
@@ -40,9 +45,10 @@
     justify-content: center;
     align-items: center;
     color: gray;
-    font-size : 14px;
+    font-size : 11px;
 }
 
 .footer__copy p {
     margin: 5px;
+    font-size: 12px;
 }

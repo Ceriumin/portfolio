@@ -11,17 +11,17 @@ import {
     ProductButton,
     Footer
 } from '../../components';
+import { Underglow, Placeholder } from '../../assets/projects/index';
 import { Arrow } from '../../assets/icons';
 import source from '../../assets/memoji.webp';
 import './styles.css';
 
 function Home() {
-
+    
     const projects = [
-        {id: 1, title: 'Resurgence', description: 'Video Game', image: 'image1', onClick: () => {}},
-        {id: 2, title: 'Resurgence', description: 'Video Game', image: 'image1', onClick: () => {}},
-        {id: 3, title: 'Resurgence', description: 'Flight Simulator', image: 'image1', onClick: () => {}},
-
+        {id: 1, title: 'Planable', description: 'Application', image: Placeholder, onClick: () => {}},
+        {id: 2, title: 'Underglow', description: 'Video Game', image: Underglow, onClick: () => {}},
+        {id: 3, title: 'Resurgence', description: 'Video Game', image: Placeholder, onClick: () => {}},
     ]
 
     return (
@@ -32,7 +32,7 @@ function Home() {
             <section className='description'>
                 <div>
                     <h1>I'm Gracjan</h1>
-                    <p>Software Developer from Poland.</p>
+                    <p>Software Developer from Poland. </p>
                     <p>Currently studying at The University of Huddersfield.</p>
                 </div>
                 <ProfilePicture source={source} />
@@ -62,7 +62,7 @@ function Home() {
                 </Header>
                 <ProductButton 
                     title='GuitarPal'
-                    image='image1'
+                    image={Placeholder}
                     onClick={() => {}}
                 />
             </SubSection>
