@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 25px;
 }
 
 .outer-circle {
@@ -28,7 +29,7 @@
     overflow: hidden;
     width: var(--circle-size);
     height: var(--circle-size);
-    background: linear-gradient(to top, #d2d2d5, #dddddd);
+    background: linear-gradient(to top, #d2d2d5, #ececec);
 }
 
 .circle img {

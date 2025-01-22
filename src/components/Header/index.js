@@ -1,9 +1,9 @@
 import React from 'react';
 import './styles.css';
 
-function Header({ children, content }) {
+function Header({ children, content, style }) {
     return (
-        <div className='header__container'>
+        <div className='header__container' style={style}>
             <div className='header'>
                 <div className='point'/>
                 <h1 style={{

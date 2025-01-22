@@ -1,5 +1,48 @@
 .footer {
     text-align: center;
-    padding: 10px;
     width: 100%;
+}
+
+.footer-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.footer__icon {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__icon-link {
+    display: inline-block;
+    color: #373737;    
+}
+
+.footer__copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size : 14px;
+}
+
+.footer__copy p {
+    margin: 5px;
 }

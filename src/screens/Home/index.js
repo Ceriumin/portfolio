@@ -1,20 +1,28 @@
 import React from 'react';
-import { ProfilePicture, Header, Status, Button } from '../../components';
+import { 
+    ProfilePicture, 
+    Header, 
+    Status, 
+    EmailButton, 
+    ResumeButton, 
+    CustomButton,
+    ProjectButton,
+    SubSection,
+    ProductButton,
+    Footer
+} from '../../components';
+import { Arrow } from '../../assets/icons';
+import source from '../../assets/memoji.webp';
 import './styles.css';
 
 function Home() {
-    const [buttonText, setButtonText] = React.useState('Copy Email');
-    const [isCopied, setIsCopied] = React.useState(false);
 
-    const handleButtonClick = () => {
-        setButtonText('Copied!');
-        navigator.clipboard.writeText('personal@baryla.co.uk');
-        setIsCopied(true);
-        setTimeout(() => {
-            setButtonText('Copy Email');
-            setIsCopied(false);
-        }, 1000);
-    };
+    const projects = [
+        {id: 1, title: 'Resurgence', description: 'Video Game', image: 'image1', onClick: () => {}},
+        {id: 2, title: 'Resurgence', description: 'Video Game', image: 'image1', onClick: () => {}},
+        {id: 3, title: 'Resurgence', description: 'Flight Simulator', image: 'image1', onClick: () => {}},
+
+    ]
 
     return (
         <div className='home'>
@@ -27,11 +35,38 @@ function Home() {
                     <p>Software Developer from Poland.</p>
                     <p>Currently studying at The University of Huddersfield.</p>
                 </div>
-                <ProfilePicture />
+                <ProfilePicture source={source} />
             </section>
-            <Button onClick={handleButtonClick} buttonStyle={{minWidth: '125px'}}>
-                <span className={isCopied ? 'copied' : 'alt'}>{buttonText}</span>
-            </Button>        
+            <div className='buttons'>
+                <ResumeButton />
+                <EmailButton />
+            </div>
+            <SubSection>
+                <Header style={{marginBottom: '25px'}} content={<CustomButton leftIcon={<Arrow/>}>View All</CustomButton>}>
+                    Pinned Projects
+                </Header> 
+                {projects.map(project => (
+                    <div key={project.id} style={{marginBottom: '0.75rem'}}>
+                        <ProjectButton 
+                            title={project.title}
+                            description={project.description}
+                            image={project.image}
+                            onClick={project.onClick}
+                        />
+                    </div>
+                ))}
+            </SubSection>
+            <SubSection>
+                <Header style={{marginBottom: '25px'}}>
+                    Products
+                </Header>
+                <ProductButton 
+                    title='GuitarPal'
+                    image='image1'
+                    onClick={() => {}}
+                />
+            </SubSection>
+            <Footer bannerVisibility={true}/>
         </div>
     );
 }

@@ -1,0 +1,73 @@
+.email-button {
+    background-color: white;
+    color: #373737;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 125px; /* Adjusted width to accommodate text changes */
+    align-items: center;
+    display: flex;
+    justify-content: center;    
+    border-width: 1px;
+    border-color: lightgray;
+    border-style: solid;
+    padding: 5px 5px;
+    border-radius: 6px;
+    box-shadow: 0 0 0 0 transparent;
+    transition: box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative; /* Added position relative */
+}
+
+.email-button:hover {
+    box-shadow: 0 0 0 5px lightgray;
+}
+
+.email-button:active {
+    box-shadow: 0 0 0 0 transparent;
+}
+
+@keyframes slideInA {
+    from {
+        transform: translateX(25%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.a {
+    animation: slideInA 0.1s ease-in-out;
+    margin-left: 15px;
+    color: gray;
+}
+
+@keyframes slideInB {
+    from {
+        transform: translateX(-25%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.b {
+    animation: slideInB 0.1s ease-in-out;
+    margin-left: 25px;
+}
+
+.email-icon {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Added position absolute */
+    left: 10px; /* Adjust as needed */
+    z-index: 1;
+}

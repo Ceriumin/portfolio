@@ -1,13 +1,12 @@
 import React from 'react';
-import Picture from '../../assets/memoji.webp';
 import './styles.css';
 
-function ProfilePicture() {
+function ProfilePicture({source}) {
     return (
         <div className="container">
             <div className='outer-circle'>
                 <div className="circle">
-                    <img src={Picture} alt="Profile" />
+                    <img src={source} alt="Profile" />
                 </div>
             </div>
         </div>
