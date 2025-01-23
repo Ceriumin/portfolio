@@ -12,18 +12,18 @@ import {
     ProductButton,
     Footer,
     Section
-} from '../../components';
-import { Underglow, Placeholder } from '../../assets/projects/index';
-import { Arrow } from '../../assets/icons';
-import source from '../../assets/memoji.webp';
+} from '../../../components';
+import { Underglow, Placeholder, Planable, Resurgence } from '../../../assets/projects/index';
+import { Arrow } from '../../../assets/icons';
+import source from '../../../assets/memoji.webp';
 import './styles.css';
 
 function Home() {
     
     const projects = [
-        {id: 1, title: 'Planable', description: 'Application', image: Placeholder, onClick: () => {}},
-        {id: 2, title: 'Underglow', description: 'Video Game', image: Underglow, onClick: () => {}},
-        {id: 3, title: 'Resurgence', description: 'Video Game', image: Placeholder, onClick: () => {}},
+        {id: 1, title: 'Planable', description: 'Application', image: Planable},
+        {id: 2, title: 'Underglow', description: 'Video Game', image: Underglow},
+        {id: 3, title: 'Resurgence', description: 'Video Game', image: Resurgence},
     ]
 
     const navigate = () => {
@@ -54,7 +54,7 @@ function Home() {
                     </Header> 
                     {projects.map(project => (
                         <div key={project.id} style={{marginBottom: '0.75rem'}}>
-                            <Link to={`/project/${project.id}`}>
+                            <Link to={`/projects/${project.title.toLowerCase()}`}>
                                 <ProjectButton 
                                     title={project.title}
                                     description={project.description}
@@ -65,6 +65,7 @@ function Home() {
                         </div>
                     ))}
                 </SubSection>
+                <div style={{height: '15px'}}/>
                 <SubSection>
                     <Header style={{marginBottom: '25px'}}>
                         Products

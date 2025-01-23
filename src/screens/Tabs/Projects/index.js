@@ -6,16 +6,18 @@ import {
     SubSection,
     Section,
     Footer
-} from '../../components';
-import { Underglow, Placeholder } from '../../assets/projects/index';
+} from '../../../components';
+import { Underglow, Placeholder, Portfolio } from '../../../assets/projects/index';
 
 function Projects() {
     
     const projects = [
-        {id: 1, title: 'Planable', description: 'Application', image: Placeholder, onClick: () => {}},
+        {id: 1, title: 'Planable', description: 'Mobile Application', image: Placeholder, onClick: () => {}},
         {id: 3, title: 'Underglow', description: 'Video Game', image: Underglow, onClick: () => {}},
         {id: 4, title: 'Resurgence', description: 'Video Game', image: Placeholder, onClick: () => {}},
-        {id: 2, title: 'CliniQ', description: 'Application', image: Placeholder, onClick: () => {}, status: true},
+        {id: 5, title: 'Portfolio', description: 'Website', image: Portfolio, onClick: () => {}},
+        {id: 5, title: 'Poppleton Dog Show', description: 'Website', image: Placeholder, onClick: () => {}},
+        {id: 2, title: 'CliniQ', description: 'Mobile Application', image: Placeholder, onClick: () => {}, status: true},
     ]
 
     return (

@@ -1,9 +1,15 @@
 import React from 'react';
 import './styles.css';
 
-function CustomButton({children, leftIcon, rightIcon, onClick}) {
+function CustomButton({href, download, children, leftIcon, rightIcon, onClick, style}) {
     return (
-        <div className="custom-button" onClick={onClick}>
+        <a 
+            href={href} 
+            download={download} 
+            className="custom-button" 
+            onClick={onClick} 
+            style={style}
+        >
             <div className="custom-icon">
                 {rightIcon}
             </div>
@@ -11,7 +17,7 @@ function CustomButton({children, leftIcon, rightIcon, onClick}) {
             <div className="custom-icon">
                 {leftIcon}
             </div>
-        </div>
+        </a>
     );
 }
 

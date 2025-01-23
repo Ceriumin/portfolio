@@ -8,7 +8,7 @@ function Status({ children, color, onPress }) {
         style={{ backgroundColor: color }}
         onClick={onPress}>
             <div className = 'point'/>
-            <p>{children}</p>
+            <span>{children}</span>
         </div>
     );
 }

@@ -9,6 +9,7 @@ export { default as ResumeButton } from './.Buttons/Resume';
 export { default as CustomButton } from './.Buttons/Custom';
 export { default as ProjectButton } from './.Buttons/Project';
 export { default as ProductButton } from './.Buttons/Product';
+export { default as FakeButton } from './.Buttons/Fake';
 
 export { default as SubSection } from './SubSection';
 export { default as Section } from './Section';

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Placeholder } from '../../assets/projects';
-import { Header, ProductButton, SubSection, Footer, Section } from '../../components';
+import { Placeholder } from '../../../assets/projects';
+import { Header, ProductButton, SubSection, Footer, Section } from '../../../components';
 import './styles.css';
 
 function About() {
@@ -19,7 +19,7 @@ function About() {
                         development and I am always looking to learn new technologies and frameworks to
                         improve my skills and knowledge, whilst also contributing to the tech community.
                     </p>
-                    <h1>More About Me</h1>
+                    <h2>More About Me</h2>
                     <p>
                         Gracjan is currently pursuing a Bachelor's degree in Computer Science at the
                         University of Huddersfield and has a relentless drive for success and excellence.
@@ -33,7 +33,7 @@ function About() {
                         exploring coffee shops in the local area and city, as well as spending time with
                         family and with his girlfriend.
                     </p>
-                    <h1>My Side Projects</h1>
+                    <h2>My Side Projects</h2>
                     <p>I have some passion side projects. I like to solve helpful problems and a lot of these projects are
                         intertwined with my interests and hobbies.
                     </p>

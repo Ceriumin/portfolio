@@ -9,10 +9,18 @@ function App() {
       <div className='App'>
         <NavigationBar />
         <Routes>
+          {/*Tab Bar Screems are defined here*/}
           <Route path="/about" element={<Screens.About />}/>
           <Route path="/projects" element={<Screens.Projects />}/>
           <Route path="/" element={<Screens.Home />}/>
-          <Route path="/project/:id" element={<Screens.Project />}/>
+
+          {/*All the project pages are defined here*/}
+          <Route path="/projects/underglow" element={<Screens.Underglow />}/>
+          <Route path="/projects/planable" element={<Screens.Planable />}/>
+          <Route path="/projects/resurgence" element={<Screens.Resurgence />}/>
+
+          {/*404 Page*/}
+          <Route path="*" />
         </Routes>
       </div>
     </Router>    
