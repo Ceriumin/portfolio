@@ -1,0 +1,17 @@
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #373737;
+    font-weight: 400;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 50px;
+}
+
+

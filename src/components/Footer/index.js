@@ -57,6 +57,7 @@ function Footer({ bannerVisibility}) {
                     </div>
                 </div>
             </SubSection>
+            <div style={{height: '15px'}}/>
             <SubSection>
                 <div className='footer__copy'>
                     <p>Gracjan. 2025 - 2077</p>

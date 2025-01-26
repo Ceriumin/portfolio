@@ -15,7 +15,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     width: calc(var(--circle-size) + 20px);
     height: calc(var(--circle-size) + 20px);
 }
@@ -26,7 +25,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     width: var(--circle-size);
     height: var(--circle-size);
     background: linear-gradient(to top, #d2d2d5, #ececec);

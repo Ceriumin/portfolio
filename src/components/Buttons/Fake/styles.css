@@ -1,0 +1,22 @@
+.fake-button {
+    font-weight: 700;
+    align-items: center;
+    display: flex;
+    border-width: 1px;
+    border-color: lightgray;
+    border-style: solid;
+    padding: 7.5px 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #373737;
+}
+
+.fake-button__custom-icon {
+    margin-left: 8px;    
+    margin-right: 8px;
+    display: inline-flex;
+    align-items: center;
+}
+

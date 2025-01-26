@@ -1,9 +1,13 @@
-import React, { createContext, useContext, useReducer } from 'react';
+import React, { createContext, useContext } from 'react';
+import { Projects, Products } from '../utils';
 
 const SiteContext = createContext();
 
-export const SiteProvider = ({ reducer, initialState, children }) => (
-    <SiteContext.Provider value={useReducer(reducer, initialState)}>
+export const SiteProvider = ({ children }) => (
+    <SiteContext.Provider value={{ 
+        projects: Projects, 
+        products: Products 
+    }}>
         {children}
     </SiteContext.Provider>
 );
