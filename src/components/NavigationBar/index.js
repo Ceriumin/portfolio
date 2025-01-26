@@ -23,8 +23,8 @@ const NavigationBar = () => {
     return (
         <nav className="navbar">
             <ul className="navbar__list">
-                <li><a href='/'><Button source={<Home />} name="Home" isActive={location.pathname === '/'} /></a></li>
-                <li><a href='/about'><Button source={<About />} name="About" isActive={location.pathname === '/about'} /></a></li>
+                <li><a href='/#'><Button source={<Home />} name="Home" isActive={location.pathname === '/'} /></a></li>
+                <li><a href='#/about'><Button source={<About />} name="About" isActive={location.pathname === '/about'} /></a></li>
                 <li><a href='/projects'><Button source={<Projects />} name="Projects" isActive={location.pathname === '/projects'} /></a></li>
             </ul>
             <ResumeButton />
