@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/home/static/css/main.462d6c9c.css",
+    "main.js": "/home/static/js/main.5f3117cf.js",
+    "static/js/488.3c2103eb.chunk.js": "/home/static/js/488.3c2103eb.chunk.js",
+    "static/media/portfolio.png": "/home/static/media/portfolio.ddd80d09b2eb6f1028f2.png",
+    "static/media/planable.png": "/home/static/media/planable.93395de5eb065a99beff.png",
+    "static/media/whiskey.png": "/home/static/media/whiskey.7a02a3dd17ae92ae7ad7.png",
+    "static/media/underglow.png": "/home/static/media/underglow.72f7120b3b313c6f85e5.png",
+    "static/media/guitar.png": "/home/static/media/guitar.5c497e227810b9b24dce.png",
+    "static/media/dogshow.png": "/home/static/media/dogshow.d6c2be0efeed1cef4067.png",
+    "static/media/resurgence.webp": "/home/static/media/resurgence.c25ccd5e218c1277a380.webp",
+    "static/media/memoji.webp": "/home/static/media/memoji.0003df49a5e66e924b3b.webp",
+    "static/media/Resume.pdf": "/home/static/media/Resume.daa5587dd27bb25fbed7.pdf",
+    "static/media/placeholder.webp": "/home/static/media/placeholder.728a00ca43ad835df495.webp",
+    "static/media/error.webp": "/home/static/media/error.09bbf56e1bfc9276eac4.webp",
+    "static/media/GitHub.svg": "/home/static/media/GitHub.f20a7b86f7fc70543c441441491b7dc9.svg",
+    "static/media/LinkedIn.svg": "/home/static/media/LinkedIn.9063cdafd362d174853b1c0ed15c9b87.svg",
+    "static/media/Clipboard.svg": "/home/static/media/Clipboard.b88c2bcec91ec512c9e2c21ba9c49c30.svg",
+    "static/media/Padlock.svg": "/home/static/media/Padlock.5aef4944d853d4c27cbfa3b62e683daa.svg",
+    "static/media/Program.svg": "/home/static/media/Program.f7dd32753ee1c4a191042dc477659e05.svg",
+    "static/media/Cross.svg": "/home/static/media/Cross.2ad3d080dc2ded3a3506b86fad1a1d9e.svg",
+    "static/media/Home.svg": "/home/static/media/Home.c3c2350448b61ad69982608164f5e55f.svg",
+    "index.html": "/home/index.html",
+    "static/media/Plus.svg": "/home/static/media/Plus.a17ade74f0cab9d1c64d9cdc54352002.svg",
+    "static/media/User.svg": "/home/static/media/User.60be5bd8a79fc9e141bb8162426c5bee.svg",
+    "static/media/Download.svg": "/home/static/media/Download.056b8726579366cdb3836b9983f44c39.svg",
+    "static/media/Arrow-Right.svg": "/home/static/media/Arrow-Right.1a208d9dc95f026e61b4d005bf0d6319.svg",
+    "static/media/Arrow-Diagonal.svg": "/home/static/media/Arrow-Diagonal.11903746fe7078cde9cb6dec68b6789c.svg",
+    "static/media/Arrow-Left.svg": "/home/static/media/Arrow-Left.ced1c422410d050ad33760f762956ca7.svg",
+    "static/media/Chevron.svg": "/home/static/media/Chevron.c9207f9b0d17bc9c87d3a19a4c1ae2ae.svg",
+    "main.462d6c9c.css.map": "/home/static/css/main.462d6c9c.css.map",
+    "main.5f3117cf.js.map": "/home/static/js/main.5f3117cf.js.map",
+    "488.3c2103eb.chunk.js.map": "/home/static/js/488.3c2103eb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.462d6c9c.css",
+    "static/js/main.5f3117cf.js"
+  ]
+}
