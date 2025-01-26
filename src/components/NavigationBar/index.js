@@ -1,5 +1,6 @@
 import React from 'react';
 import { Home, About, Projects } from '../../assets/icons';
+import { Link } from 'react-router-dom';
 import { ResumeButton } from '../';
 import './index.css';
 import { useLocation } from 'react-router-dom';
@@ -22,9 +23,21 @@ const NavigationBar = () => {
     return (
         <nav className="navbar">
             <ul className="navbar__list">
-                <li><a href='#/'><Button source={<Home />} name="Home" isActive={location.hash === '#/'} /></a></li>
-                <li><a href='#/about'><Button source={<About />} name="About" isActive={location.hash === '#/about'} /></a></li>
-                <li><a href='#/projects'><Button source={<Projects />} name="Projects" isActive={location.hash === '#/projects'} /></a></li>
+                <li>
+                    <Link to="/">
+                        <Button source={<Home />} name="Home" isActive={location.pathname === '/'} />
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/about">
+                        <Button source={<About />} name="About" isActive={location.pathname === '/about'} />
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/projects">
+                        <Button source={<Projects />} name="Projects" isActive={location.pathname === '/projects'} />
+                    </Link>
+                </li>
             </ul>
             <ResumeButton />
         </nav>
