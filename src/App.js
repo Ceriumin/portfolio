@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import * as Screens from './screens';
 import { NavigationBar } from './components';
 import './index.css';
@@ -7,7 +7,7 @@ import './index.css';
 function App() {
 
   return (
-    <Router>
+    <HashRouter>
       <div className='App'>
         <NavigationBar />
         <Routes>
@@ -30,7 +30,7 @@ function App() {
           <Route path="*" element={<Screens.Error/>}/>
         </Routes>
       </div>
-    </Router>    
+    </HashRouter>    
   );
 }
 
