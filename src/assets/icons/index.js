@@ -13,3 +13,5 @@ export { ReactComponent as Projects } from './navbar/Program.svg';
 
 export { ReactComponent as Clipboard } from './Clipboard.svg';
 export { ReactComponent as Plus } from './Plus.svg';
+export { ReactComponent as Padlock } from './Padlock.svg';
+export { ReactComponent as Cross } from './Cross.svg';

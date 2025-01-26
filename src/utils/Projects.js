@@ -7,7 +7,6 @@ const Projects = [
     {id: 4, title: 'Portfolio', description: 'Website', image: Project.Portfolio},
     {id: 5, title: 'Poppleton Dog Show', description: 'Website', image: Project.Dogshow},
     {id: 6, title: 'CliniQ', description: 'Mobile Application', image: Project.Placeholder, status: true},
-    {id: 7, title: 'Dramly', description: 'Mobile Application', image: Project.Whiskey, status: true},
 ]
 
 const Products = [

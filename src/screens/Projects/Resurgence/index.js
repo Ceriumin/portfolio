@@ -5,7 +5,7 @@ import './styles.css';
 
 function Resurgence() {
 
-    const file = '/files/Resurgence.zip';
+    const file = 'https://drive.google.com/uc?export=download&id=1UAr06AqITAvl8tjMQU6xF8IQMLSnJXkB';
 
     return (
         <Section className='page'>
