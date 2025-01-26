@@ -1,10 +1,12 @@
 import React from 'react';
 import { Header, Section, Footer, ProfilePicture, CustomButton } from '../../../components';
 import error from '../../../assets/error.webp';
-import { Arrow_Back } from '../../../assets/icons';
+import { useNavigate } from 'react-router-dom';
 import './styles.css';
 
 function Error() {
+    const navigate = useNavigate();
+
     return (
         <Section>
             <div className='error'>
@@ -17,7 +19,7 @@ function Error() {
                     <p>This page does not exist</p>
                 </div>
                 <div className='error__buttons'>
-                    <CustomButton onClick={() => window.location.href = '/'}>Back to Home</CustomButton>
+                    <CustomButton onClick={() => navigate('/')}>Back to Home</CustomButton>
                 </div>
             </div>
             <Footer bannerVisibility={false}/>

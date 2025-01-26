@@ -17,6 +17,7 @@ import {
 import { useSiteValue } from '../../../context/SiteContext';
 import { Arrow } from '../../../assets/icons';
 import source from '../../../assets/memoji.webp';
+import { useNavigate } from 'react-router-dom';
 import './styles.css';
 
 function Home() {
@@ -38,8 +39,10 @@ function Home() {
 
     const { projects, products } = useSiteValue();
 
-    const navigate = () => {
-        window.location.href = '/projects';
+    const navigate = useNavigate();
+
+    const handleNavigation = () => {
+      navigate('/projects');
     };
 
     const filteredProjects = projects
@@ -70,7 +73,7 @@ function Home() {
                     <EmailButton />
                 </div>
                 <SubSection>
-                    <Header style={{marginBottom: '25px'}} content={<CustomButton onClick={navigate} leftIcon={<Arrow/>}>View All</CustomButton>}>
+                    <Header style={{marginBottom: '25px'}} content={<CustomButton onClick={handleNavigation} leftIcon={<Arrow/>}>View All</CustomButton>}>
                         Pinned Projects
                     </Header> 
                     {filteredProjects.map(project => (
