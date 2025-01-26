@@ -32,6 +32,7 @@ function Home() {
 
     const handleCloseModal = () => {
         setModalVisible(false);
+        localStorage.setItem('isModalDismissed', true);
     };
 
 

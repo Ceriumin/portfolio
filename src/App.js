@@ -14,7 +14,7 @@ function App() {
           {/*Tab Bar Screems are defined here*/}
           <Route path="/about" element={<Screens.About />}/>
           <Route path="/projects" element={<Screens.Projects />}/>
-          <Route path="/" element={<Screens.Home />}/>
+          <Route path="/home" element={<Screens.Home />}/>
 
           {/*All the project pages are defined here*/}
           <Route path="/projects/underglow" element={<Screens.Underglow />}/>
