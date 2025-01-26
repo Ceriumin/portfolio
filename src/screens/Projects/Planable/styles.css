@@ -33,3 +33,15 @@
     color: #818181;
     font-size: 14px;
 }
+
+.page__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    height: 300px;
+    box-shadow: 0 5px 15px rgba(134, 134, 134, 0.5);
+    margin-bottom: 30px;
+    
+}

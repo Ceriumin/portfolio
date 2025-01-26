@@ -1,9 +1,13 @@
 import React from 'react';
 import { Placeholder } from '../../../assets/projects';
+import { useSiteValue } from '../../../context/SiteContext';
 import { Header, ProductButton, SubSection, Footer, Section } from '../../../components';
 import './styles.css';
 
 function About() {
+
+    const { products } = useSiteValue();
+
     return (
         <Section>
             <div className="about">
@@ -39,7 +43,15 @@ function About() {
                     </p>
                     <div style={{height: '25px'}}/>
                     <SubSection>
-                        <ProductButton title="GuitarPal" image={Placeholder} onClick={() => {}} />
+                        {products.map(product => (
+                            <ProductButton
+                                key={product.id}
+                                title={product.title}
+                                description={product.description}
+                                source={product.source || Placeholder}
+                                link={product.link}
+                            />
+                        ))}
                     </SubSection>
                     <Footer bannerVisibility={true}/>
                 </section>

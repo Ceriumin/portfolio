@@ -46,15 +46,12 @@ function Resurgence() {
                     Download
                 </CustomButton>
             </div>
-            <div className='page__image'>
-                <img src={require('./assets/image1.png')} alt='Resurgence' />
-            </div>
-            <p>
+            {/*<p>
                 I am a large fan of flight simulation software, such as the likes of Digital Combat Simulator,
                 however some of the games are too expensive, too complicated or too simple, and never in the 
                 middle. This is where Resurgence comes in, providing a balance between realism and arcade,
                 and was the motivation behind the project.
-            </p>
+            </p>*/}
 
         </Section>
     );

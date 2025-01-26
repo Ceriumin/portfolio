@@ -52,9 +52,6 @@ function Underglow() {
                     Visit Site
                 </CustomButton>
             </div>
-            <div className='page__image'>
-                <img src={require('./assets/image1.png')} alt='Underglow' />
-            </div>
 
         </Section>
     );

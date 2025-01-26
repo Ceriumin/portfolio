@@ -7,18 +7,12 @@ import {
     Section,
     Footer
 } from '../../../components';
-import { Underglow, Placeholder, Portfolio } from '../../../assets/projects/index';
+import { Link } from 'react-router-dom';
+import { useSiteValue } from '../../../context/SiteContext';
 
 function Projects() {
     
-    const projects = [
-        {id: 1, title: 'Planable', description: 'Mobile Application', image: Placeholder, onClick: () => {}},
-        {id: 3, title: 'Underglow', description: 'Video Game', image: Underglow, onClick: () => {}},
-        {id: 4, title: 'Resurgence', description: 'Video Game', image: Placeholder, onClick: () => {}},
-        {id: 5, title: 'Portfolio', description: 'Website', image: Portfolio, onClick: () => {}},
-        {id: 5, title: 'Poppleton Dog Show', description: 'Website', image: Placeholder, onClick: () => {}},
-        {id: 2, title: 'CliniQ', description: 'Mobile Application', image: Placeholder, onClick: () => {}, status: true},
-    ]
+    const { projects, products  } = useSiteValue();
 
     return (
         <Section>
@@ -36,13 +30,15 @@ function Projects() {
                 <SubSection>
                     {projects.map(project => (
                         <div key={project.id} style={{marginBottom: '0.75rem'}}>
-                            <ProjectButton 
-                                title={project.title}
-                                description={project.description}
-                                image={project.image}
-                                onClick={project.onClick}
-                                status={project.status}
-                            />
+                            <Link to={`/projects/${project.title.toLowerCase()}`}>
+                                <ProjectButton 
+                                    title={project.title}
+                                    description={project.description}
+                                    status={project.status}
+                                    image={project.image}
+                                    onClick={project.onClick}
+                                />
+                            </Link>
                         </div>
                     ))}
                 </SubSection>
@@ -57,11 +53,17 @@ function Projects() {
                     <Header style={{marginBottom: '1rem'}}>
                         Products
                     </Header>
-                    <ProductButton 
-                        title='GuitarPal'
-                        image={Placeholder}
-                        onClick={() => {}}
-                    />
+                    {products.map(product => (
+                        <Link key={product.id} to={`/projects/${product.title.toLowerCase()}`}>
+                            <ProductButton
+                                title={product.title}
+                                description={product.description}
+
+                                source={product.source}
+                                link={product.link}
+                            />
+                        </Link>
+                    ))}
                 </SubSection>
                 <Footer bannerVisibility={true}/>
             </div>

@@ -20,7 +20,7 @@ function App() {
           <Route path="/projects/resurgence" element={<Screens.Resurgence />}/>
 
           {/*404 Page*/}
-          <Route path="*" />
+          <Route path="*" element={<Screens.Error/>}/>
         </Routes>
       </div>
     </Router>    

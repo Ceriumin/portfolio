@@ -1,6 +1,7 @@
 export { ReactComponent as Chevron } from './Chevron.svg';
 export { ReactComponent as Diagonal_Arrow } from './Arrow-Diagonal.svg';
 export { ReactComponent as Arrow } from './Arrow-Right.svg';
+export { ReactComponent as Arrow_Back } from './Arrow-Left.svg';
 export { ReactComponent as Download } from './Download.svg';
 
 export { ReactComponent as GitHub } from './GitHub.svg';

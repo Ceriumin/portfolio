@@ -1,6 +1,7 @@
 export { default as Home } from './Tabs/Home';
 export { default as About } from './Tabs/About';
 export { default as Projects } from './Tabs/Projects';
+export { default as Error } from './Tabs/Error';
 
 export { default as Underglow } from './Projects/Underglow';
 export { default as Planable } from './Projects/Planable';
