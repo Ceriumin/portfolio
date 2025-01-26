@@ -7,7 +7,7 @@ import './index.css';
 function App() {
 
   return (
-    <HashRouter>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <div className='App'>
         <NavigationBar />
         <Routes>
