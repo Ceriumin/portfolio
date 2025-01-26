@@ -4,6 +4,7 @@ import { Projects, Products } from '../utils';
 const SiteContext = createContext();
 
 export const SiteProvider = ({ children }) => (
+    
     <SiteContext.Provider value={{ 
         projects: Projects, 
         products: Products 
