@@ -7,7 +7,7 @@ import './index.css';
 function App() {
 
   return (
-    <Router>
+    <Router basename="/portfolio">
       <div className='App'>
         <NavigationBar />
         <Routes>
