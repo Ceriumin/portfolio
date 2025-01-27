@@ -8,7 +8,7 @@ function EmailButton() {
 
     const handleButtonClick = () => {
         setButtonText('Copied!');
-        navigator.clipboard.writeText('personal@baryla.co.uk');
+        navigator.clipboard.writeText('barylagracjan@icloud.com');
         setIsCopied(true);
         setTimeout(() => {
             setButtonText('Copy Email');

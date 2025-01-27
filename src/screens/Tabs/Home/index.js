@@ -14,7 +14,6 @@ import {
     ProjectList,
     ProductList
 } from '../../../components';
-import { useSiteValue } from '../../../context/SiteContext';
 import { Arrow } from '../../../assets/icons';
 import source from '../../../assets/memoji.webp';
 import { useNavigate } from 'react-router-dom';
@@ -35,7 +34,7 @@ function Home() {
         setModalVisible(false);
         localStorage.setItem('isModalDismissed', true);
     };
-    
+
     const navigate = useNavigate();
 
     const handleNavigation = () => {
