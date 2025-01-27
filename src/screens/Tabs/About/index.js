@@ -35,7 +35,8 @@ function About() {
                     <p>
                         When he's not immersed in code, he finds solace in playing the Acoustic Guitar and
                         exploring coffee shops in the local area and city, as well as spending time with
-                        family and with his girlfriend.
+                        family and with his girlfriend. Additionally, to keep healthy mentally and physically,
+                        he enjoys lifting weights at his local gym.
                     </p>
                     <h2>My Side Projects</h2>
                     <p>I have some passion side projects. I like to solve helpful problems and a lot of these projects are
