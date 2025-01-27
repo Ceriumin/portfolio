@@ -7,12 +7,12 @@ import {
     EmailButton, 
     ResumeButton, 
     CustomButton,
-    ProjectButton,
     SubSection,
-    ProductButton,
     Footer,
     Section,
-    Modal
+    Modal,
+    ProjectList,
+    ProductList
 } from '../../../components';
 import { useSiteValue } from '../../../context/SiteContext';
 import { Arrow } from '../../../assets/icons';
@@ -35,24 +35,12 @@ function Home() {
         setModalVisible(false);
         localStorage.setItem('isModalDismissed', true);
     };
-
-
-    const { projects, products } = useSiteValue();
-
+    
     const navigate = useNavigate();
 
     const handleNavigation = () => {
       navigate('/projects');
     };
-
-    const filteredProjects = projects
-        .sort((a, b) => a.id - b.id)
-        .slice(0, 3);
-
-    const filteredProducts = products
-        .sort((a, b) => a.id - b.id)
-        .slice(0, 3);
-
     return (
         <Section>
             <Modal isVisible={isModalVisible} onClose={handleCloseModal}/>
@@ -76,35 +64,14 @@ function Home() {
                     <Header style={{marginBottom: '25px'}} content={<CustomButton onClick={handleNavigation} leftIcon={<Arrow/>}>View All</CustomButton>}>
                         Pinned Projects
                     </Header> 
-                    {filteredProjects.map(project => (
-                        <div key={project.id} style={{marginBottom: '0.75rem'}}>
-                            <Link to={`/projects/${project.title.toLowerCase()}`}>
-                                <ProjectButton 
-                                    title={project.title}
-                                    description={project.description}
-                                    image={project.image}
-                                    status={project.status}
-                                    onClick={project.onClick}
-                                />
-                            </Link>
-                        </div>
-                    ))}
+                    <ProjectList maxItems={3}/>
                 </SubSection>
                 <div style={{height: '15px'}}/>
                 <SubSection>
                     <Header style={{marginBottom: '25px'}}>
                         Products
                     </Header>
-                    {filteredProducts.map(products => (
-                        <Link key={products.id} to={`/projects/${products.title.toLowerCase()}`}>
-                            <ProductButton
-                                title={products.title}
-                                description={products.description}
-                                image={products.image}
-                                link={products.link}
-                            />
-                        </Link>
-                    ))}
+                    <ProductList maxItems={3}/>
                 </SubSection>
                 <Footer bannerVisibility={true}/>
             </div>

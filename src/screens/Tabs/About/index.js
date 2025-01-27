@@ -1,7 +1,7 @@
 import React from 'react';
 import { Placeholder } from '../../../assets/projects';
 import { useSiteValue } from '../../../context/SiteContext';
-import { Header, ProductButton, SubSection, Footer, Section } from '../../../components';
+import { Header, SubSection, Footer, Section, ProductList } from '../../../components';
 import './styles.css';
 
 function About() {
@@ -43,15 +43,7 @@ function About() {
                     </p>
                     <div style={{height: '25px'}}/>
                     <SubSection>
-                        {products.map(product => (
-                            <ProductButton
-                                key={product.id}
-                                title={product.title}
-                                description={product.description}
-                                source={product.source || Placeholder}
-                                link={product.link}
-                            />
-                        ))}
+                        <ProductList maxItems={3}/>
                     </SubSection>
                     <Footer bannerVisibility={true}/>
                 </section>

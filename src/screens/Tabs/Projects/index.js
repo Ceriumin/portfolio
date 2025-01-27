@@ -1,11 +1,11 @@
 import React from 'react';
 import { 
     Header, 
-    ProjectButton,
-    ProductButton,
     SubSection,
     Section,
-    Footer
+    Footer,
+    ProductList,
+    ProjectList
 } from '../../../components';
 import { Link } from 'react-router-dom';
 import { useSiteValue } from '../../../context/SiteContext';
@@ -28,19 +28,7 @@ function Projects() {
                     </p>
                 </div>
                 <SubSection>
-                    {projects.map(project => (
-                        <div key={project.id} style={{marginBottom: '0.75rem'}}>
-                            <Link to={`/projects/${project.title.toLowerCase()}`}>
-                                <ProjectButton 
-                                    title={project.title}
-                                    description={project.description}
-                                    status={project.status}
-                                    image={project.image}
-                                    onClick={project.onClick}
-                                />
-                            </Link>
-                        </div>
-                    ))}
+                    <ProjectList maxItems={20}/>
                 </SubSection>
                 <div style={{marginBottom: '3rem'}}>
                     <h1>Explore my Products</h1>
@@ -53,17 +41,7 @@ function Projects() {
                     <Header style={{marginBottom: '1rem'}}>
                         Products
                     </Header>
-                    {products.map(product => (
-                        <Link key={product.id} to={`/projects/${product.title.toLowerCase()}`}>
-                            <ProductButton
-                                title={product.title}
-                                description={product.description}
-
-                                source={product.source}
-                                link={product.link}
-                            />
-                        </Link>
-                    ))}
+                    <ProductList maxItems={20}/>
                 </SubSection>
                 <Footer bannerVisibility={true}/>
             </div>
