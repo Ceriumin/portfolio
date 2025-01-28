@@ -1,5 +1,5 @@
 import React from 'react';
-import { Placeholder } from '../../../assets/projects';
+import Photo from '../../../assets/photo.jpeg';
 import { useSiteValue } from '../../../context/SiteContext';
 import { Header, SubSection, Footer, Section, ProductList } from '../../../components';
 import './styles.css';
@@ -23,20 +23,25 @@ function About() {
                         development and I am always looking to learn new technologies and frameworks to
                         improve my skills and knowledge, whilst also contributing to the tech community.
                     </p>
+                    <div className="about_image-container">
+                        <div style={{padding: '1rem'}}>
+                            <img src={Photo} alt="Gracjan" className="about_image"/>
+                        </div>
+                    </div>
                     <h2>More About Me</h2>
                     <p>
-                        Gracjan is currently pursuing a Bachelor's degree in Computer Science at the
-                        University of Huddersfield and has a relentless drive for success and excellence.
-                        Actively involved in the development community, Gracjan regularly participates in
-                        hackathons, coding competitions, and contributes to open-source projects, as well as
-                        developing his own.
+                        I am currently pursuing a Bachelor's degree in Computer Science at the
+                        University of Huddersfield and have a relentless drive for success and excellence.
+                        I am Actively involved in the development community, as well as regularly participate in
+                        hackathons, coding competitions, and sometimes contribute to open-source projects, as well as
+                        developing my own passion projects.
                     </p>
                     <div style={{height: '10px'}}/>
                     <p>
-                        When he's not immersed in code, he finds solace in playing the Acoustic Guitar and
+                        When I am not immersed in code, I find solace in playing the Acoustic Guitar and
                         exploring coffee shops in the local area and city, as well as spending time with
-                        family and with his girlfriend. Additionally, to keep healthy mentally and physically,
-                        he enjoys lifting weights at his local gym.
+                        my family and with my girlfriend. Additionally, to keep healthy mentally and physically,
+                        I enjoy lifting weights at my local, and university gym.
                     </p>
                     <h2>My Side Projects</h2>
                     <p>I have some passion side projects. I like to solve helpful problems and a lot of these projects are

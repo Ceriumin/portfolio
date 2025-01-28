@@ -12,8 +12,6 @@ import { useSiteValue } from '../../../context/SiteContext';
 
 function Projects() {
     
-    const { projects, products  } = useSiteValue();
-
     return (
         <Section>
             <div className='projects'>

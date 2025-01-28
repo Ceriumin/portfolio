@@ -5,3 +5,20 @@
     margin: 0;
     line-height: 25px;
 }
+
+.about_image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 0.5px solid lightgray;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.about_image {
+    object-fit: fill;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
