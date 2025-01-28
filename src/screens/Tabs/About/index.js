@@ -1,5 +1,4 @@
 import React from 'react';
-import Photo from '../../../assets/photo.jpeg';
 import { useSiteValue } from '../../../context/SiteContext';
 import { Header, SubSection, Footer, Section, ProductList } from '../../../components';
 import './styles.css';
@@ -23,11 +22,6 @@ function About() {
                         development and I am always looking to learn new technologies and frameworks to
                         improve my skills and knowledge, whilst also contributing to the tech community.
                     </p>
-                    <div className="about_image-container">
-                        <div style={{padding: '1rem'}}>
-                            <img src={Photo} alt="Gracjan" className="about_image"/>
-                        </div>
-                    </div>
                     <h2>More About Me</h2>
                     <p>
                         I am currently pursuing a Bachelor's degree in Computer Science at the
@@ -40,7 +34,7 @@ function About() {
                     <p>
                         When I am not immersed in code, I find solace in playing the Acoustic Guitar and
                         exploring coffee shops in the local area and city, as well as spending time with
-                        my family and with my girlfriend. Additionally, to keep healthy mentally and physically,
+                        my loved ones. Additionally, to keep healthy mentally and physically,
                         I enjoy lifting weights at my local, and university gym.
                     </p>
                     <h2>My Side Projects</h2>
