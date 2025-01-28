@@ -7,7 +7,7 @@ import './index.css';
 function App() {
 
   return (
-    <HashRouter basename='/'>
+    <HashRouter>
       <div className='App'>
         <NavigationBar />
         <Routes>
