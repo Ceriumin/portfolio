@@ -22,6 +22,7 @@ function App() {
           <Route path="/projects/resurgence" element={<Screens.Resurgence />}/>
           <Route path="/projects/portfolio" element={<Screens.Portfolio />}/>
           <Route path="/projects/poppleton dog show" element={<Screens.Dogshow />}/>
+          <Route path="/projects/cliniq" element={<Screens.Cliniq />}/>
 
           {/*All the product pages are defined here*/}
           <Route path="/products/guitarpal" element={<Screens.GuitarPal />}/>
