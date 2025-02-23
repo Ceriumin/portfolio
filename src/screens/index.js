@@ -9,5 +9,3 @@ export { default as Resurgence } from './Projects/Resurgence';
 export { default as Portfolio } from './Projects/Portfolio';
 export { default as Dogshow } from './Projects/Dogshow';
 export { default as Cliniq } from './Projects/Cliniq';
-
-export { default as GuitarPal } from './Products/GuitarPal';

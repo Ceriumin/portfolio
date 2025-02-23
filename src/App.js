@@ -24,9 +24,6 @@ function App() {
           <Route path="/projects/poppleton dog show" element={<Screens.Dogshow />}/>
           <Route path="/projects/cliniq" element={<Screens.Cliniq />}/>
 
-          {/*All the product pages are defined here*/}
-          <Route path="/products/guitarpal" element={<Screens.GuitarPal />}/>
-
           {/*404 Page*/}
           <Route path="*" element={<Screens.Error/>}/>
         </Routes>

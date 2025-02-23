@@ -27,7 +27,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: box-shadow 0.3s ease-in-out;
 }
+
+.footer__icon:hover {
+    box-shadow: 0 0 0 5px lightgray;
+}
+
 
 .footer__icons {
     display: flex;

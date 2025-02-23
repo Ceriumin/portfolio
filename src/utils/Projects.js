@@ -10,7 +10,7 @@ const Projects = [
 ]
 
 const Products = [
-    {id: 1, title: 'GuitarPal', image: Project.guitar},
+    {id: 1, title: 'Tune Thing', image: Project.guitar},
 ]
 
 export { Projects, Products };
