@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4a3fa8cf.css",
-    "main.js": "/portfolio/static/js/main.266d9146.js",
+    "main.css": "/portfolio/static/css/main.377943e3.css",
+    "main.js": "/portfolio/static/js/main.fbfbdf94.js",
     "static/js/488.3c2103eb.chunk.js": "/portfolio/static/js/488.3c2103eb.chunk.js",
     "static/media/underglow.webp": "/portfolio/static/media/underglow.9152f66581e432d12bd4.webp",
     "static/media/whiskey.webp": "/portfolio/static/media/whiskey.1fac01e984b88404c6bb.webp",
@@ -29,12 +29,12 @@
     "static/media/Arrow-Diagonal.svg": "/portfolio/static/media/Arrow-Diagonal.005f9611088cd292aef98cbdcb65b224.svg",
     "static/media/Arrow-Left.svg": "/portfolio/static/media/Arrow-Left.56c5602651e976280999d59e70b487ea.svg",
     "static/media/Chevron.svg": "/portfolio/static/media/Chevron.dc642301eb0ccd1c6dad37870536f0a0.svg",
-    "main.4a3fa8cf.css.map": "/portfolio/static/css/main.4a3fa8cf.css.map",
-    "main.266d9146.js.map": "/portfolio/static/js/main.266d9146.js.map",
+    "main.377943e3.css.map": "/portfolio/static/css/main.377943e3.css.map",
+    "main.fbfbdf94.js.map": "/portfolio/static/js/main.fbfbdf94.js.map",
     "488.3c2103eb.chunk.js.map": "/portfolio/static/js/488.3c2103eb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a3fa8cf.css",
-    "static/js/main.266d9146.js"
+    "static/css/main.377943e3.css",
+    "static/js/main.fbfbdf94.js"
   ]
 }
