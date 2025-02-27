@@ -34,14 +34,10 @@
     font-size: 14px;
 }
 
-.page__image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.planable__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
     margin-top: 30px;
-    overflow: hidden;
-    height: 300px;
-    box-shadow: 0 5px 15px rgba(134, 134, 134, 0.5);
-    margin-bottom: 30px;
-    
 }
+

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Section, SubSection, CustomButton, FakeButton } from '../../../components';
+import { Section, SubSection, CustomButton } from '../../../components';
 import { Diagonal_Arrow } from '../../../assets/icons';
 import './styles.css';
 
@@ -41,6 +41,28 @@ function Planable() {
                     Source Code
                 </CustomButton>
             </div>
+            <div>
+                <img className='planable__image' src={require('../../../assets/renders/Planable.png')} alt='Planable 1'/>
+            </div>
+            <h2>
+                The Problems to Solve
+            </h2>
+                <p>
+                    The main problem we wanted to solve was the lack of student-friendly finance applications. Many applications
+                    are either too complex, or not designed with students in mind. To tackle this, we wanted to create an application that was
+                    simple to use, and focused on the needs of students. We also wanted to practice and hone our project management skills, and
+                    learn how to develop a mobile application from start to finish similar to a real-world industry project.
+                </p>
+            <h2>
+                The Solution
+            </h2>
+                <p>
+                    We developed Planable, a student finance planner application that is designed to be simple and easy to use. The application
+                    consists of a dashboard that displays the user's current balance, and allows them to add transactions, view their transaction history,
+                    and set budgets. The application also includes a feature that allows users to set savings goals, and contains a finance calculator
+                    that allows users to calculate their monthly expenses. The application is designed to be user-friendly, and includes a clean and
+                    intuitive interface.
+                </p>
         </Section>
     );
 }
